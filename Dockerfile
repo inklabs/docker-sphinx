@@ -27,4 +27,6 @@ RUN yum -y update \
 COPY ./wait-for-mysql.sh /usr/local/bin
 RUN chmod +x /usr/local/bin/wait-for-mysql.sh
 
+EXPOSE 9306
+
 CMD ["searchd", "--nodetach"]
