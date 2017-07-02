@@ -14,7 +14,7 @@ RUN yum -y update \
         unixODBC \
         mysql \
         $BUILD_DEPENDENCIES \
-    && wget $SPHINX_URL -O sphinx.rpm \
+    && wget -q $SPHINX_URL -O sphinx.rpm \
     && yum -y install sphinx.rpm \
     && rm sphinx.rpm \
     && yum -y remove $BUILD_DEPENDENCIES \
