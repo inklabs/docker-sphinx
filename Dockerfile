@@ -1,6 +1,6 @@
 FROM centos:centos7
 
-LABEL maintainer "Jamie Isaacs <pdt256@gmail.com>"
+LABEL maintainer="Jamie Isaacs <pdt256@gmail.com>"
 
 WORKDIR /usr/local/src
 
